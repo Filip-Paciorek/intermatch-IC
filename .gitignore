@@ -1,0 +1,12 @@
+# Environment
+.venv/
+__pycache__/
+
+# Data
+data/raw/*
+!data/raw/.gitkeep
+
+# IDEs & System
+.vscode/
+.idea/
+.DS_Store
