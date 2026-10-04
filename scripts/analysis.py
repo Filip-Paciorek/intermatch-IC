@@ -17,9 +17,9 @@ coupa_match_rate =  round((all_matched.shape[0] / lean_coupa.shape[0]) * 100,2)
 # %%
 print('Conclusions: ')
 print('The matching was performed using invoice numbers, their dates, and amounts. \n' \
-'Due to caught system inconsistency, most dates were treated as posting dates instead of invoice dates, thus a 2 day sliding window was applied to the matching \n' \
+'Due to caught system inconsistency, most dates were treated as posting dates instead of invoice dates, thus a 2 day sliding window was applied to the matching. \n' \
 'Invoices within that timeframe, with amount and price matching were considered as a match. \n' \
-'There was a 1 Euro error margin for amounts, all Invoices withing that margin were considered a match')
+'There was a 1 Euro error margin for amounts, all Invoices withing that margin were considered a match.')
 print(f'Documents from Coupa matched: {all_matched.shape[0]}')
 print(f'Documents from Coupa still missing: {not_matched_coupa.shape[0]} ')
 print(f'Documents left not matched from Sap: {not_matched_sap.shape[0]}')
