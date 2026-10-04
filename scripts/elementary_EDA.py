@@ -159,7 +159,7 @@ print(all_matched.shape)
 print(sap_wo_cleared.shape)
 print(not_matched_coupa.shape)
 print(not_matched_sap.shape)
-print(labeled_matching.shape)
+print(lean_coupa.shape)
 
 # %% Performed some eyeball checks for missing documents to see if there was anything sus about the data, everythning looks fine
 # Save the data for analysis
@@ -167,5 +167,5 @@ all_matched.to_csv(DATA_DIR / 'processed' / 'all_matched.csv')
 sap_wo_cleared.to_csv(DATA_DIR / 'processed' / 'sap_wo_cleared.csv')
 not_matched_coupa.to_csv(DATA_DIR / 'processed' / 'not_matched_coupa.csv')
 not_matched_sap.to_csv(DATA_DIR / 'processed' / 'not_matched_sap.csv')
-labeled_matching.to_csv(DATA_DIR / 'processed' / 'labeled_matching.csv')
+labeled_matching.to_csv(DATA_DIR / 'processed' / 'lean_coupa.csv')
 
